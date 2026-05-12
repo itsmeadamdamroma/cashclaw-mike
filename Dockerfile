@@ -10,4 +10,4 @@ RUN cd backend && npm run build
 EXPOSE 3001
 
 WORKDIR /app/backend
-CMD ["npm", "start"]
+ENTRYPOINT ["node", "dist/index.js"]
